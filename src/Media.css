@@ -1,0 +1,212 @@
+@media (max-width: 600px) {
+    nav {
+        background-color: rgb(32, 32, 32);
+    }
+
+    .navbarSec li a {
+        display: block;
+        width: 100%;
+    }
+
+    .hero {
+        background-image: url('https://t4.ftcdn.net/jpg/12/00/09/11/360_F_1200091113_NvpI4HbjMYzTyUXoU8UkTefHpT9y5HwG.jpg');
+        padding: 0;
+    }
+
+    .container {
+        padding: 100px 0;
+
+    }
+
+    .navbar-brand {
+        font-size: 32px;
+        font-weight: bold;
+        color: rgb(255, 255, 144);
+        padding-left: 20px;
+    }
+
+    .navbtn {
+        background-color: rgb(255, 255, 144);
+        margin-right: 20px;
+    }
+
+    .hero-section {
+        display: block;
+    }
+
+
+    .hero-section .section1 {
+        color: rgb(255, 255, 255);
+        text-shadow: 2px 2px 8px black;
+    }
+
+    .hero-section .section2 {
+        display: none;
+    }
+
+    .section1 {
+        margin: 60px 0;
+        color: black;
+    }
+
+    .section1 div {
+        margin: auto;
+        width: fit-content;
+        padding: 2rem 1rem;
+    }
+
+    .footer {
+        height: 50vh;
+    }
+
+    .footer h1 {
+        margin-bottom: 50px;
+    }
+
+    .footer p {
+        text-align: justify;
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .parent {
+        padding: 0 60px;
+    }
+
+    .div3 {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+
+    .div2 {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .div1 {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    .parent2 {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 13px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .parent2 .div1 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .parent2 .div2 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .parent2 .div3 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .parent2 .div4 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 2;
+        grid-row-start: 3;
+    }
+
+    .parent2 .div5 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 1;
+        grid-row-start: 4;
+    }
+
+    .parent2 div,
+    .parent3 div {
+        margin: auto;
+    }
+
+    .parent2 div img,
+    .parent3 div img {
+        object-fit: contain;
+        width: 50px;
+        height: 75px;
+
+
+    }
+
+    .parent2 div p,
+    .parent3 div p {
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .parent3 {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 26px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .skills-heading {
+        grid-row: span 1/span 1;
+        grid-column: span 2/span 2;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        text-align: center;
+    }
+
+    .parent3 .div1 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    .parent3 .div2 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+
+    .parent3 .div3 {
+        grid-row: span 1/span 1;
+        grid-column: span 1/span 1;
+        grid-column-start: 1;
+        grid-row-start: 3;
+    }
+
+    .project-container div{
+        width: 80%;
+        margin: 0.5rem;
+    }
+
+    .footer-text{
+        width: 80%;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+
+    }
+
+}
