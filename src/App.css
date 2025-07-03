@@ -7,7 +7,7 @@
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 
@@ -57,14 +57,25 @@ h1,h3,h4 {
 .hero-section {
     display: grid;
     grid-template-columns: 50% 50%;
-
-
 }
 
 .section1 {
     margin-top: 115px;
-
     color: black;
+    animation: left-slide 0.8s ease-in forwards;
+    animation-delay: 1s;
+}
+
+@keyframes left-slide {
+    from {
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    
 }
 
 .section1 h3 {
@@ -78,9 +89,13 @@ h1,h3,h4 {
 
 
 
-.section1 div {
-    padding-left: 30%;
+.section1 .inner-section1 {
+    /* padding-left: 30%; */
     z-index: 1;
+}
+
+a{
+    text-decoration: none;
 }
 
 .section2 {
@@ -88,17 +103,32 @@ h1,h3,h4 {
     top: 20%;
     left: 10%;
     width: fit-content;
+    animation: right-slide 0.8s ease-in forwards;
+    animation-delay: 1s;
 }
+
+
 
 .section2 img {
     max-height: 100%;
     max-width: 100%;
-    width: 36 0px;
+    width: 360px;
     height: 450px;
     background-size: cover;
 
     
 }
+
+@keyframes right-slide {
+  from {
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}   
 
 .footer {
     min-height: 20vh;
@@ -354,9 +384,6 @@ h1,h3,h4 {
 
 
 
-
-
-
 /* Go to top buuton */
 
 .goTop-btn{
@@ -376,7 +403,7 @@ h1,h3,h4 {
     padding: 5px;
     color: yellow;
     animation: gotop 1.2s linear infinite alternate-reverse;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 @keyframes gotop {
@@ -386,4 +413,22 @@ h1,h3,h4 {
     100%{
         transform: translateY(0.5rem);
     }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.container *:not(footer div *){
+  animation: appear 1.2s linear;
+  animation-timeline: view(); /* experimental */
+  animation-range: entry 0% cover 20%;
+
 }

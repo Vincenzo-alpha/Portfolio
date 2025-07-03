@@ -1,3 +1,5 @@
+
+
 export default function About() {
   return (
     <>
@@ -29,12 +31,11 @@ export default function About() {
           </p>
 
           <center>
-            <button className="btn btn-dark">
+            <a href="" className="text-white bg-dark p-3 rounded-3">
               | Explore |
-            </button>
+            </a>
           </center>
         </div>
-
         <div className="parent">
           <div className="div1">
             <img className="knowledge" src="/src/assets/ab1.png" alt="" />

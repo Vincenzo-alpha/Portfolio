@@ -6,31 +6,31 @@ function Contact() {
         <div className="contact-container">
           <form action="">
             <div className="row justify-content-center align-item-center">
-              <div className="col-6">
+              <div className="col-12 col-sm-8 px-5">
                 <input
                   className="form-control"
                   placeholder="ENTER YOUR NAME"
                   type="text"
                 />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-sm-8 px-5">
                 <input
                   className="form-control"
                   placeholder="ENTER YOUR EMAIL"
                   type="email"
                 />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-sm-8 px-5">
                 <input
                   className="form-control"
                   placeholder="ENTER YOUR PHONE"
                   type="telephone"
                 />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-sm-8 px-5">
                 <textarea className="form-control" placeholder="YOUR MESSAGE" />
               </div>
-              <div className="col-6">
+              <div className="col-12 col-sm-8 px-5">
                 <center>
 <button
                   type="submit"
