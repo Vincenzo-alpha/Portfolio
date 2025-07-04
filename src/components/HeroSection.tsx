@@ -16,12 +16,12 @@ function HeroSection() {
         <main className="hero-section">
           <div className="section1">
             <div className="row justify-content-center inner-section1">
-              <h3 className="col-8">Hello, I'm</h3>
-              <h1 className="col-8">Santanu Hui</h1>
-              <h5 className="col-8">| Front-End developer |</h5>
+              <h3 className="col-12 col-md-8 text-center text-md-start">Hello, I'm</h3>
+              <h1 className="col-12 col-md-8 text-center text-md-start">Santanu Hui</h1>
+              <h5 className="col-12 col-md-8 text-center text-md-start">| Front-End developer |</h5>
               <div className="col-8 row Connect-section1">
-                <a className="col-4 text-dark pt-2" href={github}><FaGithub/>  View my GitHub</a>
-                <button className="btn btn-dark col-6" onClick={url}><FaLinkedin className="my-auto"/>  Connect with me</button>
+                <a className="col-8 col-md-4 text-dark pt-2 pb-5 pb-md-0" href={github}><FaGithub/>  View my GitHub</a>
+                <button className="btn btn-dark col-12 col-md-6" onClick={url}><FaLinkedin className="my-auto"/>  Connect with me</button>
               </div>
             </div>
           </div>

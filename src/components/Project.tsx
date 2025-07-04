@@ -1,47 +1,77 @@
-import React from "react";
 import busYatra from "../assets/busYatra.png";
 import flipkart from "../assets/flipkartClone.png";
 import rpsgame from "../assets/RPSGame.png";
 import sideman from "../assets/sidemanClone.png";
 import uber from "../assets/uberClone.png";
-import portfolio from '../assets/portfolio.png'
+import portfolio from "../assets/portfolio.png";
+import { useNavigate } from "react-router-dom";
 
-interface ReadMoreProps {
-  id: string
-  text: string
-  amountOfWords?: number
-}
 
 function Project() {
+  const navigate = useNavigate();
+  const gotoweb = (idn: number) =>{
+    switch (idn){
+    case 1:
+      window.location.href = 'https://github.com/Vincenzo-alpha/Bus_yatra'      
+      break;
+    case 2:
+      window.location.href = 'https://github.com/Vincenzo-alpha/Flipkart-clone'
+      break;
+    case 3:
+      window.location.href = 'https://github.com/Vincenzo-alpha/Rock-paper-scissor'
+      break;
+    case 4:
+      navigate('/develop') 
+      break;
+    case 5:
+      window.location.href = 'https://github.com/Vincenzo-alpha/Uber-clone-bootstrap'      
+      break;
+    case 6:
+      window.location.href = ''      
+      break;
+    
+    }
+  }
   return (
     <>
-      <div id="project" className="container d-flex flex-column align-item-center">
-        <h1>PROJECTS</h1>
-        {/* container */}
-        <div className="row row-cols-1 row-cols-sm-4 g-5 mx-auto justify-content-center align-items-center project-container">
-          <div className="col px-0 div1">
-            <img className="img-fluid" src={busYatra} alt="" />
-            <button className="btn btn-dark show-btn">Show</button>
-          </div>
-          <div className="col px-0 div1">
-            <img className="img-fluid" src={flipkart} alt="" />
-            <button className="btn btn-dark show-btn">Show</button>
-          </div>
-          <div className="col px-0 div1">
-            <img className="img-fluid" src={rpsgame} alt="" />
-            <button className="btn btn-dark show-btn">Show</button>
-          </div>
-          <div className="col px-0 div1">
-            <img className="img-fluid" src={sideman} alt="" />
-            <button className="btn btn-dark show-btn">Show</button>
-          </div>
-          <div className="col px-0 div2">
-            <img className="img-fluid" src={uber} alt="" />
-            <button className="btn btn-dark">Show</button>
-          </div>
-          <div className="col px-0 div1">
-            <img className="img-fluid" src={portfolio} alt="" />
-            <button className="btn btn-dark">Show</button>
+      <div className="forBgColor">
+        <div
+          id="project"
+          className="container d-flex flex-column align-item-center"
+        >
+          <h1>PROJECTS</h1>
+          {/* container */}
+          <div className="row row-cols-1 row-cols-sm-4 g-5 mx-auto justify-content-center align-items-center project-container">
+            <div className="col px-0 div1">
+              <img className="img-fluid" src={busYatra} alt="" />
+              <p>BUS YATRA</p>
+              <button className="btn btn-dark show-btn" onClick={() =>gotoweb(1)}>Show</button>
+            </div>
+            <div className="col px-0 div1">
+              <img className="img-fluid" src={flipkart} alt="" />
+              <p>FLIPKART CLONE</p>
+              <button className="btn btn-dark show-btn" onClick={() =>gotoweb(2)}>Show</button>
+            </div>
+            <div className="col px-0 div1">
+              <img className="img-fluid" src={rpsgame} alt="" />
+              <p>GAME</p>
+              <button className="btn btn-dark show-btn" onClick={() =>gotoweb(3)}>Show</button>
+            </div>
+            <div className="col px-0 div1">
+              <img className="img-fluid" src={sideman} alt="" />
+              <p>SIDEMAN CLONE</p>
+              <button className="btn btn-dark show-btn" onClick={() =>gotoweb(4)}>Show</button>
+            </div>
+            <div className="col px-0 div2">
+              <img className="img-fluid" src={uber} alt="" />
+              <p>UBER CLONE</p>
+              <button className="btn btn-dark" onClick={() =>gotoweb(5)}>Show</button>
+            </div>
+            <div className="col px-0 div1">
+              <img className="img-fluid" src={portfolio} alt="" />
+              <p>PORTFOLIO</p>
+              <button className="btn btn-dark" onClick={() =>gotoweb(6)}>Show</button>
+            </div>
           </div>
         </div>
       </div>

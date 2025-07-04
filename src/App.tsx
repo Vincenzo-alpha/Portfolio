@@ -1,13 +1,21 @@
-import Footer from "./components/Footer";
-import GoTop from "./components/GoTop";
-import SmoothScollPage from "./SmoothScollPage";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainFiles from "./MainFiles";
+import Bio from "./components/Bio";
+import Project from "./components/Project";
+import DevelopMode from "./components/DevelopMode";
+
 
 function App() {
   return (
     <>
-      <SmoothScollPage/>
-      <GoTop/>
-      <Footer/>
+      <BrowserRouter basename="/Portfolio-vite">
+        <Routes>
+          <Route path="/" element={<MainFiles/>} />
+          <Route path="/bio" element={<Bio/>} />
+          <Route path="/project" element={<Project/>} />
+          <Route path="/develop" element={<DevelopMode />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

@@ -1,5 +1,5 @@
 import { FaLinkedin, FaGithub, FaInstagram, FaEnvelope } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -96,7 +96,7 @@ export default function Footer() {
                 Resume
               </a>
             </p>
-            {/* <p><a href="#" className="text-white text-decoration-none">Blog</a></p> */}
+            <p><Link to="/" className="text-white text-decoration-none">Home</Link></p>
             <p>
               <a href="contact" className="text-white text-decoration-none">
                 Contact

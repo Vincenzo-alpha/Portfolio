@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 export default function About() {
@@ -31,9 +32,9 @@ export default function About() {
           </p>
 
           <center>
-            <a href="" className="text-white bg-dark p-3 rounded-3">
+            <Link to={'/bio'} className="text-white bg-dark p-3 rounded-3">
               | Explore |
-            </a>
+            </Link>
           </center>
         </div>
         <div className="parent">
@@ -47,7 +48,7 @@ export default function About() {
             </p>
           </div>
           <div className="div2">
-            <img className="knowledge" src="src/assets/ab3.png" alt="" />
+            <img className="knowledge" src="/src/assets/ab3.png" alt="" />
             <h4>DEVELOPMENT</h4>
             <p>
               Based on a project created by me or another one, sent by you, I
@@ -55,7 +56,7 @@ export default function About() {
             </p>
           </div>
           <div className="div3">
-            <img className="knowledge" src="src/assets/ab2.png" alt="" />
+            <img className="knowledge" src="/src/assets/ab2.png" alt="" />
             <h4>MAINTENANCE</h4>
             <p>
               In case of any problems or the need for changes, I can introduce

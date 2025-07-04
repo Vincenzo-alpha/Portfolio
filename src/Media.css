@@ -267,4 +267,8 @@
   animation: none
 }
 
+    .project-container button{
+        display: block;
+    }
+
 }

@@ -329,18 +329,18 @@ a{
     width: 30%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    /* gap: 5rem; */
+    grid-template-rows: repeat(4, 1fr);
     border: 5px black ridge;
     margin: 1rem 1rem;
-    
+    background-color: darkgray;
+
 }
 
 .project-container div button {
     grid-column: span 1/span 1;
     grid-row: span 1/ span 1;
-    grid-column-start: 2;
-    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
     display: none;
     width: 60px;
     height: 30px;
@@ -359,9 +359,17 @@ a{
     /* width: 500px; */
     /* height: 500px; */
     object-fit: contain;
+    border: 5px black ridge;
     transition: filter 0.3s ease;
+}
 
-
+.project-container div p{
+        grid-column: span 1/span 1;
+    grid-row: span 1/ span 1;
+    grid-column-start: 1;
+    grid-row-start: 4;
+    justify-content: center;
+    text-align: center;
 }
 
 .project-container div:hover button {
@@ -369,7 +377,7 @@ a{
 
 }
 
-.project-container div img:hover{
+.project-container div:hover img{
     filter: brightness(50%);
 }
 
@@ -431,4 +439,18 @@ a{
   animation-timeline: view(); /* experimental */
   animation-range: entry 0% cover 20%;
 
+}
+
+/* Bio section */
+.bio-image img{
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    /* aspect-ratio: 1/1; */
+    object-position: top;
+}
+
+.bio-image{
+    border: 3px solid rgb(119, 119, 119);
 }
