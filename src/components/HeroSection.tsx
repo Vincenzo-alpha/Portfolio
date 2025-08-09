@@ -39,7 +39,7 @@ function HeroSection() {
           design.
         </p>
       </div>
-      <div>sdsdd</div>
+
     </>
   );
 }
