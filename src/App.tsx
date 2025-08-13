@@ -8,7 +8,7 @@ import DevelopMode from "./components/DevelopMode";
 function App() {
   return (
     <>
-      <BrowserRouter basename="/Portfolio-vite">
+      <BrowserRouter basename="/Portfolio">
         <Routes>
           <Route path="/" element={<MainFiles/>} />
           <Route path="/bio" element={<Bio/>} />
