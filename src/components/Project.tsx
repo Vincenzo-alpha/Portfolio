@@ -9,29 +9,28 @@ import { useNavigate } from "react-router-dom";
 
 function Project() {
   const navigate = useNavigate();
-  const gotoweb = (idn: number) =>{
-    switch (idn){
+const gotoweb = (idn: number) => {
+  switch (idn) {
     case 1:
-      window.location.href = 'https://github.com/Vincenzo-alpha/Bus_yatra'      
+      window.open('https://github.com/Vincenzo-alpha/Bus_yatra', '_blank');
       break;
     case 2:
-      window.location.href = 'https://github.com/Vincenzo-alpha/Flipkart-clone'
+      window.open('https://github.com/Vincenzo-alpha/Flipkart-clone', '_blank');
       break;
     case 3:
-      window.location.href = 'https://github.com/Vincenzo-alpha/Rock-paper-scissor'
+      window.open('https://github.com/Vincenzo-alpha/Rock-paper-scissor', '_blank');
       break;
     case 4:
-      navigate('/develop') 
+      navigate('/develop');
       break;
     case 5:
-      window.location.href = 'https://github.com/Vincenzo-alpha/Uber-clone-bootstrap'      
+      window.open('https://github.com/Vincenzo-alpha/Uber-clone-bootstrap', '_blank');
       break;
     case 6:
-      window.location.href = ''      
+      window.open('', '_blank'); // Add your portfolio link here
       break;
-    
-    }
   }
+};
   return (
     <>
       <div className="forBgColor">

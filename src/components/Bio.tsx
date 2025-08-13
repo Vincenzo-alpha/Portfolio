@@ -1,5 +1,5 @@
 import React from "react";
-import myph from "../assets/myph1.png";
+import myph from "../assets/myph2.png";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 

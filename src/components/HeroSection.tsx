@@ -26,7 +26,7 @@ function HeroSection() {
             </div>
           </div>
           <div className="section2">
-            <img className="photo" src="/src/assets/myph1.png" alt="" />
+            <img className="photo" src="/src/assets/myph2.png" alt="Profile_pic" />
             <div className="d-none design-box"></div>
           </div>
         </main>
