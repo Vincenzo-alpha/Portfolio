@@ -27,7 +27,7 @@ const gotoweb = (idn: number) => {
       window.open('https://github.com/Vincenzo-alpha/Uber-clone-bootstrap', '_blank');
       break;
     case 6:
-      window.open('', '_blank'); // Add your portfolio link here
+      window.open('https://github.com/Vincenzo-alpha/Portfolio.git', '_blank'); // Add your portfolio link here
       break;
   }
 };
