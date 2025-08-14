@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import myph from "../assets/myph2.png"
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function HeroSection() {
@@ -26,7 +27,7 @@ function HeroSection() {
             </div>
           </div>
           <div className="section2">
-            <img className="photo" src="/src/assets/myph2.png" alt="Profile_pic" />
+            <img className="photo" src= { myph } alt="Profile_pic" />
             <div className="d-none design-box"></div>
           </div>
         </main>
