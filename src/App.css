@@ -1,24 +1,28 @@
 * {
     margin: 0;
     padding: 0;
-  font-family: "Advent Pro", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
     box-sizing: border-box;
+    resize: none;
+    
 }
 
-a{
+a {
     cursor: pointer;
 }
 
-h1,h3,h4 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
+h1,
+h3,
+h4 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .forBgColor {
@@ -74,20 +78,21 @@ h1,h3,h4 {
         transform: translateX(-5rem);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
     }
-    
+
 }
 
 .section1 h3 {
-  font-family: "Advent Pro", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 
@@ -97,7 +102,7 @@ h1,h3,h4 {
     z-index: 1;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -110,8 +115,6 @@ a{
     animation-delay: 1s;
 }
 
-
-
 .section2 img {
     max-height: 100%;
     max-width: 100%;
@@ -119,19 +122,20 @@ a{
     height: 450px;
     background-size: cover;
 
-    
 }
 
+
 @keyframes right-slide {
-  from {
-    transform: translateX(5rem);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}   
+    from {
+        transform: translateX(5rem);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 .footer {
     min-height: 20vh;
@@ -152,7 +156,7 @@ a{
     border: 5px solid;
     padding: 5px 10px;
     margin: 0 auto 100px;
-    
+
 }
 
 .about-section {
@@ -324,7 +328,7 @@ a{
 
 /* project section */
 
-.project-container{
+.project-container {
     width: 100%;
 }
 
@@ -366,8 +370,8 @@ a{
     transition: filter 0.3s ease;
 }
 
-.project-container div p{
-        grid-column: span 1/span 1;
+.project-container div p {
+    grid-column: span 1/span 1;
     grid-row: span 1/ span 1;
     grid-column-start: 1;
     grid-row-start: 4;
@@ -380,13 +384,13 @@ a{
 
 }
 
-.project-container div:hover img{
+.project-container div:hover img {
     filter: brightness(50%);
 }
 
 /* Content section */
 
-.contact-container .form-control{
+.contact-container .form-control {
     border: 0;
     box-shadow: -5px 5px black;
     margin-bottom: 20px;
@@ -397,7 +401,7 @@ a{
 
 /* Go to top buuton */
 
-.goTop-btn{
+.goTop-btn {
     position: fixed;
     bottom: 100px;
     right: 50px;
@@ -410,7 +414,7 @@ a{
 
 }
 
-.goTop-btn>.arrowIcon{
+.goTop-btn>.arrowIcon {
     padding: 5px;
     color: yellow;
     animation: gotop 1.2s linear infinite alternate-reverse;
@@ -418,34 +422,37 @@ a{
 }
 
 @keyframes gotop {
-    0%{
+    0% {
         transform: translateY(-0.5rem);
     }
-    100%{
+
+    100% {
         transform: translateY(0.5rem);
     }
 }
 
 @keyframes appear {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
-.container *:not(footer div *){
-  animation: appear 1.2s linear;
-  animation-timeline: view(); /* experimental */
-  animation-range: entry 0% cover 20%;
+.container *:not(footer div *) {
+    animation: appear 1.2s linear;
+    animation-timeline: view();
+    /* experimental */
+    animation-range: entry 0% cover 20%;
 
 }
 
 /* Bio section */
-.bio-image img{
+.bio-image img {
     z-index: 1;
     width: 300px;
     height: 300px;
@@ -454,6 +461,6 @@ a{
     object-position: top;
 }
 
-.bio-image{
+.bio-image {
     border: 3px solid rgb(119, 119, 119);
 }

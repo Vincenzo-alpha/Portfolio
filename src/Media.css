@@ -83,6 +83,7 @@
         height: auto !important;
         display: block;
         object-fit: cover;
+        
     }
 
     .design-box {
@@ -271,4 +272,20 @@
         display: block;
     }
 
+}
+
+@media (min-width: 2000px) {
+    *{
+        font-size: large;
+    }
+    .section1{
+        padding-top: 100px;
+    }
+    .section2{
+        top: 40%;
+        left: 10%;
+    }
+    .section2 img{
+        scale: 1.5;
+    }
 }
